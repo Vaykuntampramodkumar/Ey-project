@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Contact  from "./pages/Contact";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -25,6 +26,7 @@ function App() {
         <Route path="/register" element={<Register setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/home" element={ <Home /> } />
         <Route path="/about" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
 
       </Routes>
     </Router>
